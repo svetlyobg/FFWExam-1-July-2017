@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="myDIV" class="header">
+      <h2 style="margin:5px">My To Do List</h2>
+
+    </div>
+<form>
+  <button type="button" class = "addBtn" onclick="AddMessage()">ADD NEW</button>
+  <br>
+
+</form>
+
+
+<body>
+    <script>
+    function AddMessage() {
+        document.getElementById("demo").innerHTML = "Added new to-do.";
+        var t = document.createTextNode(" ");
+    }
+
+function ADDNEWBUTTON()
+{
+    var btn = document.createElement("BUTTON");
+    var t = document.createTextNode("CLICK ME");
+    btn.appendChild(t);
+    document.body.appendChild(btn);
+}
+    function functionADD() {
+  var ul = document.getElementById("list");
+  var li = document.createElement("li");
+  li.appendChild(document.createTextNode("DOTO"));
+  ul.appendChild(li);
+}
+    </script>
+
+
+
+    <ul id="myUL">
+      <li>TODO 1 <button type="button" class = "delBtn">DELETE</button></li>
+      <li>TODO 2 <button type="button" class = "delBtn">DELETE</button></li>
+      <li>TODO 3 <button type="button" class = "delBtn">DELETE</button></li>
+    </ul>
+
+
+
+
+</body>

@@ -1,0 +1,118 @@
+task 1
+<?php
+#Parce CSV data
+
+echo "<html><body><table>\n\n";
+$CSVcontents = 'Product ID,Product Name,Price,Currency
+1,Product 1,20,EUR
+2,Product 2,25,BGN
+3,Product 3,12,USD
+4,Product 4,14,BGN
+5,Product 5,1,EUR
+6,Product 6,4,USD
+7,Product 7,3.5,EUR
+8,Product 8,8.55,USD'
+
+
+ ?>
+****************************
+
+task 2
+
+<?php
+#List Of all applicants
+
+$applicants =[
+    (object)[
+    'Id' => 233,
+    'Name' => 'Ivaylo',
+    'Priority' => NULL,
+    'Description' => 'Some description',
+],
+(object)[
+    'Id' => 413,
+    'Name' => 'Miroslav',
+    'Priority' => 1,
+    'Description' => 'Some description',
+],
+
+(object)[
+    'Id' => 51,
+    'Name' => 'Georgi',
+    'Priority' => NULL,
+    'Description' => 'Some description',
+],
+];
+array ($applicants);
+
+usort($array('' => , );, function ($a, $b) {
+     return strcmp($a['Name'], $b['Name']);
+});
+var_dump($array);
+
+
+ ?>
+
+*********************************
+TASK3.1
+
+<?php
+
+#PHP OOP
+#task 1 - create user class_alias
+
+class User
+{
+  protected $name = " ";
+  protected $email = " ";
+  public function __get($param)
+  {
+    $this->property = $value;
+    echo "$param does not exists";
+  }
+  public function __set($name,$value)
+  {
+    echo "enter your details";
+    $this -> {$name} = $value;
+  }
+  function __call($param, $value)
+  {
+    echo "$param ($value)"
+  }
+
+$u1 = new User ();
+$u1 -> name = "Svet";
+
+
+
+ ?>
+
+**********************************
+
+TASK3.2
+
+<?php
+
+#profesion interface
+
+ class SomeClass
+ {
+    $a = "obj"
+ }
+
+ interface Profession
+ {
+   function setProfession();
+   {
+     echo "set";
+   }
+   function getProfession();
+   {
+     echo "get";
+   }
+ }
+ $a -> new SomeClass();
+
+
+ ?>
+**************************
